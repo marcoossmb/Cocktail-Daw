@@ -1,0 +1,221 @@
+.cocktailscontainer__title {
+  padding-top: 2rem;
+  ;
+}
+
+/* Selects */
+
+.selects {
+  border-top: 1px solid var(--textColor);
+  border-bottom: 1px solid var(--textColor);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.select__categories,
+.select__glasses,
+.select__btn {
+  font-size: 1rem;
+  cursor: pointer;
+  width: 200px;
+  border: none;
+  outline: none;
+  border: 1px solid var(--rose-300);
+  padding: 0.3rem 0;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: var(--rose-300);
+  padding: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.select__option {
+  background-color: #282727;
+}
+
+.select__categories:hover,
+.select__glasses:hover,
+.select__btn:hover {
+  border: 1px solid var(--rose-400);
+}
+
+
+/* Para la barra de desplazamiento */
+.select__glasses::-webkit-scrollbar, .modal__select::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+.select__glasses::-webkit-scrollbar-track, .modal__select::-webkit-scrollbar-track {
+  background: var(--rose-50);
+}
+
+.select__glasses::-webkit-scrollbar-thumb, .modal__select::-webkit-scrollbar-thumb{
+  background-color: var(--rose-300);
+  border-radius: 0.25rem;
+}
+
+
+/* Tabla */
+.tablacocktail {
+  color: var(--rose-300);
+  width: 100%;
+  border-spacing: 10px 5px;
+}
+
+.tablacocktail tr:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tablacocktail td {
+  margin-right: 1rem;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid;
+  vertical-align: bottom;
+}
+
+.tablacocktail td:nth-child(1) {
+  vertical-align: top;
+  width: 50%;
+}
+
+.tablacocktail td:nth-child(2) {
+  vertical-align: top;
+  width: 30%;
+}
+
+.tablacocktail td:nth-child(3) {
+  vertical-align: top;
+  width: 20%;
+}
+
+.tablacocktail thead td {
+  padding: 0.25rem 0.25rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+
+/* Modal */
+
+.modal__buttons {
+  text-align: center;
+}
+
+.modal-container {
+  left: 0;
+  top: -1250px;
+  /* top: 0px; */
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.25rem;
+}
+
+.modal {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.2rem;
+  padding: 2rem;
+  background-color: rgba(245, 205, 240, 0.692);
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--rose-500);
+  font-variant: small-caps;
+  font-size: 1.75rem;
+  display: block;
+}
+
+.modal__input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  background-color: var(--rose-50);
+  color: var(--rose-500);
+}
+
+.modal__input::placeholder {
+  color: var(--rose-500);
+}
+
+.modal__buttons {
+  width: 100%;
+}
+
+.modal__button {
+  width: 100%;
+  background-color: var(--rose-500);
+  padding: 0.5rem;
+  color: var(--rose-100);
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1rem;;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__button--cancelar {
+  background-color: var(--rose-300);
+}
+
+.modal__select {
+  color: var(--rose-400);
+}
+
+.modal__select option {
+  color: var(--rose-500);
+  background-color: var(--rose-100);
+}
+
+.modal__mostrar {
+  animation-name: mostrar;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes mostrar {
+  from {
+    opacity: 0;
+    top: -900px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0px;
+
+  }
+}
+
+@keyframes recoger {
+  from {
+    opacity: 1;
+    top: 0px;
+  }
+
+  to {
+    opacity: 0;
+    top: -900px;
+  }
+}

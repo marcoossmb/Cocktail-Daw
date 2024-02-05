@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, rgba(253, 179, 179, 0.221) 20%, rgba(204, 204, 204, 0) 80%), url(../assets/images/fondo1.png) black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.container {
+  max-width: 1300px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin:0;
+}
+
+.title {
+  font-family: cocktail;
+  font-size: 5.6vw;
+  padding:3rem 0 0 3rem;
+  color: var(--rose-500);
+  margin: 0 0 0 2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+}
+
+.title:hover {
+  text-shadow: 0 0 10px var(--rose-100), 0 0 20px var(--rose-100), 0 0 30px var(--rose-100), 0 0 40px var(--rose-300), 0 0 70px var(--rose-300), 0 0 80px var(--rose-300), 0 0 100px var(--rose-300);
+}
+
+.section-form {
+  font-family: nunito;
+  margin: 0rem 0 0 2rem;
+  width: 60vw;
+  display: flex;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  border-radius: 0.25rem;
+  padding: 2rem;
+  width: 475px;
+}
+
+.form__title {
+  text-align: center;
+  font-size: 2.75rem;
+  letter-spacing: 0.1rem;
+}
+
+.form__subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.025rem;
+}
+
+.form__input {
+  border: none;
+  border: 1px solid var(--rose-300);
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.25rem;
+  color: var(--rose-300);
+  background-color: transparent;
+}
+
+.form__input:focus {
+  border: 1px solid var(--rose-200);
+  color: var(--rose-200);
+  background-color: rgba(245, 245, 245, 0.081);
+  box-shadow: 0.01rem 0.01rem 0.7rem var(--rose-200);
+}
+
+.form__input::placeholder {
+  color: var(--rose-300);
+
+}
+
+.form__label {
+  color: var(--rose-300);
+  display: block;
+  font-size: 1.4rem;
+
+  margin: 1.5rem 0 0.25rem 0;
+}
+
+.form__forget {
+  display: inline-block;
+  color: var(--rose-300);
+  margin-top: 20px;
+  font-size: 1.25rem;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+
+}
+
+.form__password:hover {
+  color: var(--azulGris);
+}
+
+.form__submit {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  color: var(--rose-100);
+  font-size: 1.5rem;
+  border: none;
+  margin-top: 1.2rem;
+  transition: background-color .3s ease-in-out;
+  background-color: var(--rose-400);
+}
+
+.form__submit:hover {
+  cursor: pointer;
+  background-color: var(--rose-600);
+
+}

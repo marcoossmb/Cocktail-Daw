@@ -1,0 +1,304 @@
+{
+  "ingredientsdata": [
+    {
+      "nameIngredient": "Light rum"
+    },
+    {
+      "nameIngredient": "Applejack"
+    },
+    {
+      "nameIngredient": "Gin"
+    },
+    {
+      "nameIngredient": "Dark rum"
+    },
+    {
+      "nameIngredient": "Sweet Vermouth"
+    },
+    {
+      "nameIngredient": "Strawberry schnapps"
+    },
+    {
+      "nameIngredient": "Scotch"
+    },
+    {
+      "nameIngredient": "Apricot brandy"
+    },
+    {
+      "nameIngredient": "Triple sec"
+    },
+    {
+      "nameIngredient": "Southern Comfort"
+    },
+    {
+      "nameIngredient": "Orange bitters"
+    },
+    {
+      "nameIngredient": "Brandy"
+    },
+    {
+      "nameIngredient": "Lemon vodka"
+    },
+    {
+      "nameIngredient": "Blended whiskey"
+    },
+    {
+      "nameIngredient": "Dry Vermouth"
+    },
+    {
+      "nameIngredient": "Amaretto"
+    },
+    {
+      "nameIngredient": "Tea"
+    },
+    {
+      "nameIngredient": "Champagne"
+    },
+    {
+      "nameIngredient": "Coffee liqueur"
+    },
+    {
+      "nameIngredient": "Bourbon"
+    },
+    {
+      "nameIngredient": "Tequila"
+    },
+    {
+      "nameIngredient": "Vodka"
+    },
+    {
+      "nameIngredient": "Añejo rum"
+    },
+    {
+      "nameIngredient": "Bitters"
+    },
+    {
+      "nameIngredient": "Sugar"
+    },
+    {
+      "nameIngredient": "Kahlua"
+    },
+    {
+      "nameIngredient": "demerara Sugar"
+    },
+    {
+      "nameIngredient": "Dubonnet Rouge"
+    },
+    {
+      "nameIngredient": "Watermelon"
+    },
+    {
+      "nameIngredient": "Lime juice"
+    },
+    {
+      "nameIngredient": "Irish whiskey"
+    },
+    {
+      "nameIngredient": "Apple brandy"
+    },
+    {
+      "nameIngredient": "Carbonated water"
+    },
+    {
+      "nameIngredient": "Cherry brandy"
+    },
+    {
+      "nameIngredient": "Creme de Cacao"
+    },
+    {
+      "nameIngredient": "Grenadine"
+    },
+    {
+      "nameIngredient": "Port"
+    },
+    {
+      "nameIngredient": "Coffee brandy"
+    },
+    {
+      "nameIngredient": "Red wine"
+    },
+    {
+      "nameIngredient": "Rum"
+    },
+    {
+      "nameIngredient": "Grapefruit juice"
+    },
+    {
+      "nameIngredient": "Ricard"
+    },
+    {
+      "nameIngredient": "Sherry"
+    },
+    {
+      "nameIngredient": "Cognac"
+    },
+    {
+      "nameIngredient": "Sloe gin"
+    },
+    {
+      "nameIngredient": "Apple juice"
+    },
+    {
+      "nameIngredient": "Pineapple juice"
+    },
+    {
+      "nameIngredient": "Lemon juice"
+    },
+    {
+      "nameIngredient": "Sugar syrup"
+    },
+    {
+      "nameIngredient": "Milk"
+    },
+    {
+      "nameIngredient": "Strawberries"
+    },
+    {
+      "nameIngredient": "Chocolate syrup"
+    },
+    {
+      "nameIngredient": "Yoghurt"
+    },
+    {
+      "nameIngredient": "Mango"
+    },
+    {
+      "nameIngredient": "Ginger"
+    },
+    {
+      "nameIngredient": "Lime"
+    },
+    {
+      "nameIngredient": "Cantaloupe"
+    },
+    {
+      "nameIngredient": "Berries"
+    },
+    {
+      "nameIngredient": "Grapes"
+    },
+    {
+      "nameIngredient": "Kiwi"
+    },
+    {
+      "nameIngredient": "Tomato juice"
+    },
+    {
+      "nameIngredient": "Cocoa powder"
+    },
+    {
+      "nameIngredient": "Chocolate"
+    },
+    {
+      "nameIngredient": "Heavy cream"
+    },
+    {
+      "nameIngredient": "Galliano"
+    },
+    {
+      "nameIngredient": "Peach Vodka"
+    },
+    {
+      "nameIngredient": "Ouzo"
+    },
+    {
+      "nameIngredient": "Coffee"
+    },
+    {
+      "nameIngredient": "Spiced rum"
+    },
+    {
+      "nameIngredient": "Water"
+    },
+    {
+      "nameIngredient": "Espresso"
+    },
+    {
+      "nameIngredient": "Angelica root"
+    },
+    {
+      "nameIngredient": "Orange"
+    },
+    {
+      "nameIngredient": "Cranberries"
+    },
+    {
+      "nameIngredient": "Johnnie Walker"
+    },
+    {
+      "nameIngredient": "Apple cider"
+    },
+    {
+      "nameIngredient": "Everclear"
+    },
+    {
+      "nameIngredient": "Cranberry juice"
+    },
+    {
+      "nameIngredient": "Egg yolk"
+    },
+    {
+      "nameIngredient": "Egg"
+    },
+    {
+      "nameIngredient": "Grape juice"
+    },
+    {
+      "nameIngredient": "Peach nectar"
+    },
+    {
+      "nameIngredient": "Lemon"
+    },
+    {
+      "nameIngredient": "Firewater"
+    },
+    {
+      "nameIngredient": "Lemonade"
+    },
+    {
+      "nameIngredient": "Lager"
+    },
+    {
+      "nameIngredient": "Whiskey"
+    },
+    {
+      "nameIngredient": "Absolut Citron"
+    },
+    {
+      "nameIngredient": "Pisco"
+    },
+    {
+      "nameIngredient": "Irish cream"
+    },
+    {
+      "nameIngredient": "Ale"
+    },
+    {
+      "nameIngredient": "Chocolate liqueur"
+    },
+    {
+      "nameIngredient": "Midori melon liqueur"
+    },
+    {
+      "nameIngredient": "Sambuca"
+    },
+    {
+      "nameIngredient": "Cider"
+    },
+    {
+      "nameIngredient": "Sprite"
+    },
+    {
+      "nameIngredient": "7-Up"
+    },
+    {
+      "nameIngredient": "Blackberry brandy"
+    },
+    {
+      "nameIngredient": "Peppermint schnapps"
+    },
+    {
+      "nameIngredient": "Creme de Cassis"
+    }
+  ]
+}

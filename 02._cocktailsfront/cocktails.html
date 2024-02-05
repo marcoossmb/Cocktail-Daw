@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAW Cocktails & Dreams</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/s-4.png" type="image/x-icon" />
+
+  <!-- Fuente Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,900;0,1000;1,600;1,700;1,900;1,1000&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/menu.css" />
+  <link rel="stylesheet" href="./css/cocktails.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <section class="header__container">
+
+        <!-- nav -->
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="populares.html">Populares</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="favoritos.html">Favoritos</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="cocktails.html">Cocktails</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#footer">Nosotros</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="main">
+      <h2 class="cocktailscontainer__title">
+        Gestión de Cocktails !!!
+      </h2>
+
+      <!-- Selects para consultas por categoría y por Autor -->
+      <section>
+        <section class="selects">
+
+          <!-- Cocktails por Categoría -->
+          <select id="select_categories" class="select__categories">
+            <option class="select__option" value="" selected disabled>Categorías</option>
+          </select>
+
+          <!-- cocktails por Vaso -->
+          <select id="select_glasses" class="select__glasses">
+            <option class="select__option" value="" selected disabled>Tipo de Vaso</option>
+          </select>
+
+          <!-- Muestra todos los libros -->
+          <button id="btn_allcocktails" class="select__btn">Todos</button>
+
+          <!-- Creamos un nuevo libro -->
+          <button id="btn_newcocktail" class="select__btn">Crear</button>
+        </section>
+
+
+        <!-- Tabla de resultados -->
+        <table class="tablacocktail">
+          <thead>
+            <td class="tablacocktail__encabezado">Nombre</td>
+            <td class="tablacocktail__encabezado">Categoría</td>
+            <td class="tablacocktail__encabezado">Tipos Vaso</td>
+          </thead>
+          <tbody class="tablacocktail__body" id="tablacocktail_body">
+            <!-- Aquí cargamos los cocktails
+          IMPORTANTE el tbody NO OLVIDAR-->
+          </tbody>
+        </table>
+
+
+        <section class="modal-container" id="modal_container">
+          <article class="modal">
+            <h2 class="modal__title" id="modal_title">Nuevo Cocktail</h2>
+            <input class="modal__input" id="modal_input_title" type="text" placeholder="Nombre">
+            
+            <select id="modal_select_category" class="modal__input modal__select">
+              <option class="select__option" value="" selected disabled>Categoría</option>
+            </select>
+
+            <select id="modal_select_glass" type="text" class="modal__input modal__select">
+              <option class="select__option" value="" selected disabled>Tipo de Vaso</option>
+            </select>
+
+            <button class="modal__button" id="btn_modal_aniadir">Añadir</button>
+
+            <button class="modal__button modal__button--cancelar" id="btn_modal_cancelar">Cancelar</button>
+
+          </article>
+        </section>
+
+
+    </main>
+  </div>
+
+  <!-- <script src="./js/cocktailsclass.js"></script> -->
+  <script src="./js/cocktails.js"></script>
+</body>
+
+</html>

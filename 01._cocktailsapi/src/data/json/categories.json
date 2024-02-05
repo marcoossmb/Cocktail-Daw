@@ -1,0 +1,49 @@
+{
+  "categoriesdata": [
+    {
+      "idCategory": 1,
+      "nameCategory": "Ordinary Drink"
+    },
+    {
+      "idCategory": 2,
+      "nameCategory": "Shot"
+    },
+    {
+      "idCategory": 3,
+      "nameCategory": "Beer"
+    },
+    {
+      "idCategory": 4,
+      "nameCategory": "Other - Unknown"
+    },
+
+    {
+      "idCategory": 5,
+      "nameCategory": "Coffee - Tea"
+    },
+    {
+      "idCategory": 6,
+      "nameCategory": "Soft Drink"
+    },
+    {
+      "idCategory": 7,
+      "nameCategory": "Cocoa"
+    },
+    {
+      "idCategory": 8,
+      "nameCategory": "Shake"
+    },
+    {
+      "idCategory": 9,
+      "nameCategory": "Cocktail"
+    },
+    {
+      "idCategory": 10,
+      "nameCategory": "Homemade Liqueur"
+    },
+    {
+      "idCategory": 11,
+      "nameCategory": "Punch - Party Drink"
+    }
+  ]
+}

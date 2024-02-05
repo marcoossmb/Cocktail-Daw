@@ -1,0 +1,32 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: baseline;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav__item {
+  width: 100%;
+  text-align: center;
+}
+
+.nav__link {
+  display: block;
+  color: var(--rose-500);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+
+.nav__link:hover {
+  text-shadow: 1px 1px 30px var(--rose-50);
+  color:var(--rose-300);
+}

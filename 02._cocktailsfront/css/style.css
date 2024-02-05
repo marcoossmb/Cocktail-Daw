@@ -1,0 +1,69 @@
+:root {
+  --rose-50: #ffeff3;
+  --rose-100: #ffe0ea;
+  --rose-200: #ffc6da;
+  --rose-300: #ff97bb;
+  --rose-400: #ff5d98;
+  --rose-500: #ff247b;
+  --rose-600: #ff0571;
+  --rose-700: #d7005d;
+  --rose-800: #b40056;
+  --rose-900: #990250;
+  --rose-950: #570026;
+}
+
+@font-face {
+  font-family: cocktail;
+  src: url(../assets/Fonts/Sunsetl.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, rgba(253, 179, 179, 0.056), #72727227) rgba(0, 0, 0, 0.894);
+  font-family: nunito;
+}
+
+.container {
+  margin: 60px auto 0;
+  max-width: 1200px;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  background: linear-gradient(to right, rgba(253, 179, 179, 0.056), #72727227) rgba(28, 28, 28);
+  box-shadow: 1px 1px 10px #ffa8be9c;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+/* Cocktails */
+.cocktailscontainer {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.cocktailscontainer__title {
+  font-size: 2rem;
+  margin: 2rem 0.75rem 0.75rem;
+  color: var(--rose-300);
+  font-weight: 600;
+  text-align: right;
+}
