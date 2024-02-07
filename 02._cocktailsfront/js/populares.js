@@ -56,16 +56,19 @@ const showPopularCocktails = (cocktails) => {
     // MAS PISTA!!!!! 
     let mainnamecocktail = document.createElement("H3");
     mainnamecocktail.classList.add("cocktail__title");
-    // if (/* si cocktail esta en el localStorage */) {
-    // mainnamecocktail.classList.add("cocktail__votes");
-    // mainnamecocktail.textContent =
-    // cocktails[rand].nameCocktail.substring(0, 18) +
-    // " - " +
-    ///* dato votos del localStorage, recuerda que tenemos el id del Cocktail guardado en el title  */ +
-    // " votos";
-    //} else {
-    mainnamecocktail.textContent = cocktails[rand].nameCocktail.substring(0, 25);
-    //}
+    if (localStorage.getItem(cocktails[rand].idCocktail)) {
+      mainnamecocktail.classList.add("cocktail__votes");
+
+      const votes = JSON.parse(localStorage.getItem(cocktails[rand].idCocktail));
+
+      mainnamecocktail.textContent =
+        cocktails[rand].nameCocktail.substring(0, 18) +
+        " - " +
+        votes.length +
+        " votos";
+    } else {
+      mainnamecocktail.textContent = cocktails[rand].nameCocktail.substring(0, 25);
+    }
     maincocktail.appendChild(mainnamecocktail);
 
     // header para maquetar imagen y textos del cocktail
@@ -143,28 +146,45 @@ const showPopularCocktails = (cocktails) => {
 };
 
 const aniadirCarro = (event) => {
-  let voto = 0
-  let element = event.target
+  let element = event.target;
   if (element.tagName === "IMG") {
+    let voto = 0;
+    let idCocktail = element.parentElement.parentElement.title;
+    if (localStorage.getItem(idCocktail)) {
+      voto = JSON.parse(localStorage.getItem(idCocktail)).votos;
+      voto++;
+    } else {
+      voto = 1;
+    }
+
     cocktail_carrito.nombre = element.nextElementSibling.children[0].textContent;
     cocktail_carrito.categoria = element.nextElementSibling.children[1].children[0].children[0].textContent;
     cocktail_carrito.tipovaso = element.nextElementSibling.children[1].children[0].children[1].textContent;
-    voto++
     cocktail_carrito.votos = voto;
     cocktail_carrito.imageCocktail = element.src;
 
-    aniadirLocalStorage(cocktail_carrito);
+    aniadirLocalStorage(cocktail_carrito, idCocktail);
   }
 }
 
+
 const aniadirLocalStorage = (cocktail_carrito) => {
-  aux = JSON.parse(localStorage.getItem("coktails"))
+  let aux = JSON.parse(localStorage.getItem("coktails"));
 
   if (!aux) {
-    aux = []
+    aux = [];
   }
-  aux.push(cocktail_carrito)
-  localStorage.setItem("coktails", JSON.stringify(aux))
+
+  const existingCocktailIndex = aux.findIndex(cocktail => cocktail.nombre === cocktail_carrito.nombre);
+
+  if (existingCocktailIndex !== -1) {
+    
+    aux[existingCocktailIndex].votos++;
+  } else {
+    aux.push(cocktail_carrito);
+  }
+
+  localStorage.setItem("coktails", JSON.stringify(aux));
 }
 
 document.addEventListener("click", aniadirCarro)
